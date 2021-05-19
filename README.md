@@ -1,3 +1,0 @@
-# nac02_Android_RM82381
-
-ALTEREI

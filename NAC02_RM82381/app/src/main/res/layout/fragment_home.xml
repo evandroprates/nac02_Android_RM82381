@@ -12,15 +12,15 @@
             android:id="@+id/question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp"
-            tools:text="SOMA"
+            android:text="SOMA"
+            android:textStyle="bold"
             android:textSize="24sp"
-            app:layout_constraintBottom_toTopOf="@+id/numero_1"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/next"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            >
-        </TextView>
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.264"/>
+
 
         <EditText
             android:id="@+id/numero_1"

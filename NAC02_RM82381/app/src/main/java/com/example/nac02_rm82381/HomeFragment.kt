@@ -12,15 +12,11 @@ import com.example.nac02_rm82381.databinding.FragmentHomeBinding
 class HomeFragment : Fragment() {
 
     private lateinit var bindings: FragmentHomeBinding
-//    private var num1 = 0
-//    private var num2 = 0
-      private var resultado = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
         bindings = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container, false)
         return bindings.root
     }
@@ -32,6 +28,7 @@ class HomeFragment : Fragment() {
             val num1 = Integer.parseInt(bindings.numero1.text.toString())
             val num2 = Integer.parseInt(bindings.numero2.text.toString())
             val resultado = (num1 + num2)
+
             val action = HomeFragmentDirections.actionHomeFragmentToResultFragment(resultado)
             findNavController().navigate(action)
         }
